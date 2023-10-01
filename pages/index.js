@@ -1,5 +1,11 @@
 import Link from 'next/link';
-import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
+import { ArrowSmallRightIcon, HomeIcon } from '@heroicons/react/24/solid';
+import {
+  CloudArrowUpIcon,
+  LockClosedIcon,
+  ArrowPathIcon,
+  FingerPrintIcon,
+} from '@heroicons/react/24/outline';
 
 export default function Home() {
   return (
@@ -22,7 +28,7 @@ export default function Home() {
         </nav>
       </header>
       <main>
-        <div className="lg-container mx-44 mt-36 text-center">
+        <div className="lg-container max-w-7xl mx-auto mt-36 text-center">
           <h1 className="font-bold text-7xl mb-10 w-3/4 mx-auto">
             Deploy to the cloud with confidence
           </h1>
@@ -41,7 +47,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="lg-container w-5/6 mx-auto mt-28 mb-20 border-2 border-gray-200 rounded-3xl">
+        <div className="lg-container max-w-7xl  mx-auto mt-28 mb-20 border-2 border-gray-200 rounded-3xl">
           <div className="lg-container w-auto m-5">
             <img
               src="/img/project-app-screenshot.png"
@@ -50,7 +56,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="lg-container w-4/5 mx-auto mt-36">
+        <div className="lg-container max-w-7xl mx-auto mt-36">
           <ul className="flex justify-between px-6 mb-20">
             <li>
               <img
@@ -87,15 +93,98 @@ export default function Home() {
           <h5 className="text-lg font-bold text-indigo-500 mb-2">
             Deploy faster
           </h5>
-          <div className="lg-container w-2/5 mx-auto">
-            <h1 className="text-4xl font-bold mb-8">
+          <div className="lg-container max-w-7xl mx-auto">
+            <h1 className="text-5xl font-bold mb-8">
               Everything you need to deploy your app
             </h1>
-            <p className="font-semibold text-xl text-slate-600">
+            <p className="font-semibold text-xl text-slate-600 w-3/4 mx-auto">
               Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
               Suspendisse eget egestas a elementum pulvinar et feugiat blandit
               at. In mi vivvera elit nunc.
             </p>
+          </div>
+        </div>
+        <div className="lg-container mt-36 max-w-7xl mx-auto grid lg:grid-cols-2 gap-x-8 gap-y-20">
+          <div className="flex gap-6">
+            <div className="flex-none">
+              <CloudArrowUpIcon className="bg-indigo-500 text-white h-12 w-12 p-2 rounded-lg" />
+            </div>
+            <div className="flex-1">
+              <h1 className="font-semibold text-xl mb-4 mt-1">
+                Push to deploy
+              </h1>
+              <p className="font-semibold text-xl text-slate-600">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                porro error aperiam totam perspiciatis, laudantium veritatis
+                officia!
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-6">
+            <div className="flex-none">
+              <LockClosedIcon className="bg-indigo-500 text-white h-12 w-12 p-2 rounded-lg" />
+            </div>
+            <div className="flex-1">
+              <h1 className="font-semibold text-xl mb-4 mt-1">
+                SSL certificates
+              </h1>
+              <p className="font-semibold text-xl text-slate-600">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                porro error aperiam totam perspiciatis, laudantium veritatis
+                officia!
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-6">
+            <div className="flex-none">
+              <ArrowPathIcon className="bg-indigo-500 text-white h-12 w-12 p-2 rounded-lg" />
+            </div>
+            <div className="flex-1">
+              <h1 className="font-semibold text-xl mb-4 mt-1">Simple Queues</h1>
+              <p className="font-semibold text-xl text-slate-600">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                porro error aperiam totam perspiciatis, laudantium veritatis
+                officia!
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-6">
+            <div className="flex-none">
+              <FingerPrintIcon className="bg-indigo-500 text-white h-12 w-12 p-2 rounded-lg" />
+            </div>
+            <div className="flex-1">
+              <h1 className="font-semibold text-xl mb-4 mt-1">
+                Advanced security
+              </h1>
+              <p className="font-semibold text-xl text-slate-600">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                porro error aperiam totam perspiciatis, laudantium veritatis
+                officia!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-[1500px] mx-auto mt-64 relative h-[500px] overflow-hidden rounded-3xl bg-black">
+          <img
+            src="/img/girl.avif"
+            alt="girl"
+            className="grayscale w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 flex flex-col justify-center px-20 w-3/5 gap-10">
+            <div className="flex gap-4 items-center">
+              <HomeIcon className="h-10 text-white" />
+              <h1 className="text-white font-bold text-3xl">Workcaution</h1>
+            </div>
+            <p className="text-white font-bold text-2xl">
+              {'"'}Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non
+              deserunt doloribus laboriosam quidem porro laudantium itaque nobis
+              illo ipsa placeat, nihil repudiandae debitis. Dolorum excepturi
+              inventore exercitationem sapiente unde sequi!{'"'}
+            </p>
+            <div className="flex flex-col gap-1">
+              <h3 className="text-white font-bold text-xl">Judith Black</h3>
+              <p className="text-white text-xl">CEO of Tuple</p>
+            </div>
           </div>
         </div>
       </main>
