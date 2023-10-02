@@ -1,5 +1,9 @@
 import Link from 'next/link';
-import { ArrowSmallRightIcon, HomeIcon } from '@heroicons/react/24/solid';
+import {
+  ArrowSmallRightIcon,
+  HomeIcon,
+  CheckIcon,
+} from '@heroicons/react/24/solid';
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
@@ -37,8 +41,8 @@ export default function Home() {
             voluptas asperiores aliquam eveniet voluptatem veniam eaque placeat,
             harum, itaque vitae nostrum, corrupti sint praesentium.
           </p>
-          <div className="flex gap-3 justify-center items-center text-lg font-bold">
-            <button className="bg-indigo-500 rounded-md p-3 text-white">
+          <div className="flex gap-7 justify-center items-center text-lg font-bold">
+            <button className="bg-indigo-500 rounded-md py-3 px-4 text-white">
               Get started
             </button>
             <button className="flex items-center">
@@ -187,7 +191,236 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <section>
+          <div className="max-w-7xl mx-auto mt-64 text-center flex flex-col gap-3">
+            <h3 className="text-lg font-bold text-indigo-500">Pricing</h3>
+            <h1 className="text-6xl font-bold">
+              Pricing plans for teams of all sizes
+            </h1>
+            <p className="font-semibold text-xl text-slate-600 mt-5 w-4/5 mx-auto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Repellendus error facere necessitatibus mollitia fugiat quis porro
+              alias modi veritatis quo.
+            </p>
+          </div>
+          <div className="w-full mx-auto flex justify-center mt-32 gap-4">
+            {/* first card */}
+            <div className="border-2 border-gray-200 rounded-3xl w-3/12">
+              <div className="p-11">
+                <div className="w-11/12">
+                  <h2 className="text-2xl font-semibold">Freelancer</h2>
+                  <p className="text-lg text-slate-600 font-semibold my-5">
+                    The essentials to provide your best work for clients.
+                  </p>
+                </div>
+                <div className="flex my-5 items-end gap-2 mt-7">
+                  <h1 className="text-5xl font-bold">$24</h1>
+                  <p className="text-lg text-slate-600 font-bold">/month</p>
+                </div>
+                <div className="my-10">
+                  <ul className="flex flex-col gap-3">
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> 5
+                      products
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> Up to
+                      1,000 subscribers
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> Basic
+                      analytics
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> 48-hour
+                      support response time
+                    </li>
+                  </ul>
+                </div>
+                <div className="text-center border-2 border-indigo-200 rounded-lg flex justify-center items-end mt-20">
+                  <button className="p-2 font-bold text-lg text-indigo-500">
+                    Buy plan
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* 2nd card */}
+            <div className="border-2 border-gray-200 rounded-3xl w-3/12">
+              <div className="p-11">
+                <div>
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-2xl font-bold text-indigo-500">
+                      Startup
+                    </h2>
+                    <span className="text-sm font-bold text-indigo-500 border-2 rounded-full border-gray-200 bg-gray-200 px-2 py-1">
+                      Most popular
+                    </span>
+                  </div>
+                  <p className="text-lg text-slate-600 font-semibold my-5">
+                    A plan that scales with your rapidly growing business.
+                  </p>
+                </div>
+                <div className="flex my-5 items-end gap-2 mt-7">
+                  <h1 className="text-5xl font-bold">$32</h1>
+                  <p className="text-lg text-slate-600 font-bold">/month</p>
+                </div>
+                <div className="my-10">
+                  <ul className="flex flex-col gap-3">
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> 5
+                      products
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> Up to
+                      1,000 subscribers
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> Basic
+                      analytics
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> 48-hour
+                      support response time
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" />{' '}
+                      Marketing automations
+                    </li>
+                  </ul>
+                </div>
+                <div className="text-center border-2 border-indigo-500  bg-indigo-500 rounded-lg flex justify-center items-end">
+                  <button className="p-2 font-bold text-lg text-white">
+                    Buy plan
+                  </button>
+                </div>
+              </div>
+            </div>
+            {/* 3rd card */}
+            <div className="border-2 border-gray-200 rounded-3xl w-3/12">
+              <div className="p-11">
+                <div className="w-11/12">
+                  <h2 className="text-2xl font-semibold">Enterprise</h2>
+                  <p className="text-lg text-slate-600 font-semibold my-5">
+                    Dedicated support and infrastructure for your company.
+                  </p>
+                </div>
+                <div className="flex my-5 items-end gap-2 mt-7">
+                  <h1 className="text-5xl font-bold">$48</h1>
+                  <p className="text-lg text-slate-600 font-bold">/month</p>
+                </div>
+                <div className="my-10">
+                  <ul className="flex flex-col gap-3">
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" />{' '}
+                      Unlimited products
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" />{' '}
+                      Unlimited subscribers
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> Advanced
+                      analytics
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" /> 1-hour,
+                      dedicated support response time
+                    </li>
+                    <li className="flex gap-3 text-lg text-slate-600 font-semibold">
+                      <CheckIcon className="h-6 w-6 text-indigo-500" />{' '}
+                      Marketing automations
+                    </li>
+                  </ul>
+                </div>
+                <div className="text-center border-2 border-indigo-200 rounded-lg flex justify-center items-end">
+                  <button className="p-2 font-bold text-lg text-indigo-500">
+                    Buy plan
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* FQA */}
+          <div className="w-full mx-auto">
+            <div className="w-9/12 mx-auto mt-44 pb-12 border-b-2 border-gray-200">
+              <h1 className="text-3xl font-bold ">
+                Frequently asked questions
+              </h1>
+            </div>
+            <div className="w-9/12 mx-auto mt-8 flex justify-between">
+              <h1 className="text-xl font-bold">
+                What{"'"}s the best thing about Switzerland?
+              </h1>
+              <div className="w-1/2">
+                <p className="text-xl text-slate-600 font-semibold">
+                  I don{"'"}t know, but the flag is a big plus. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. Rerum doloribus
+                  deleniti sunt!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="max-w-7xl mx-auto text-center pt-96 pb-96 border-b-2 border-gray-200">
+            <div className="flex flex-col gap-1">
+              <h1 className="text-5xl font-bold">Boost your productivity.</h1>
+              <h1 className="text-5xl font-bold">Start using our app today.</h1>
+              <p className="text-xl font-semibold text-slate-600 w-3/6 mx-auto mt-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                veritatis beatae labore totam eaque fuga ipsam voluptas!
+              </p>
+            </div>
+            <div className="flex gap-7 justify-center items-center text-lg font-bold mt-12">
+              <button className="bg-indigo-500 rounded-md py-3 px-4 text-white">
+                Get started
+              </button>
+              <button className="flex items-center">
+                Learn more{' '}
+                <ArrowSmallRightIcon className="h-6 w-6 text-black stroke-2 pt-1" />
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div className="max-w-7xl mx-auto mt-36">
+          <div className="flex justify-between items-center w-11/12">
+            <div className="bg-indigo-500 border-2 w-9 h-9 rounded-full"></div>
+            <ul className="flex flex-col gap-7">
+              <li className="text-lg font-bold mb-8">Solutions</li>
+              <li className="text-lg font-semibold text-slate-600">Hosting</li>
+              <li className="text-lg font-semibold text-slate-600">
+                Data services
+              </li>
+              <li className="text-lg font-semibold text-slate-600">
+                Uptime Monitoring
+              </li>
+              <li className="text-lg font-semibold text-slate-600">
+                Enterprise Services
+              </li>
+            </ul>
+            <ul className="flex flex-col gap-7">
+              <li className="text-lg font-bold">Support</li>
+              <li className="text-lg font-bold">Support</li>
+              <li className="text-lg font-bold">Company</li>
+              <li className="text-lg font-bold">Legal</li>
+            </ul>
+            <ul className="flex flex-col gap-7">
+              <li className="text-lg font-bold">Company</li>
+              <li className="text-lg font-bold">Support</li>
+              <li className="text-lg font-bold">Company</li>
+              <li className="text-lg font-bold">Legal</li>
+            </ul>
+            <ul className="flex flex-col gap-7">
+              <li className="text-lg font-bold">Legal</li>
+              <li className="text-lg font-bold">Support</li>
+              <li className="text-lg font-bold">Company</li>
+              <li className="text-lg font-bold">Legal</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
